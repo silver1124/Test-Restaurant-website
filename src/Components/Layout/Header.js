@@ -2,6 +2,7 @@ import React from 'react';
 import image from '../../Assets/meals.jpg'
 import HeaderCartButton from './HeaderCartButton';
 import classes from './Header.module.css'
+import MealsSummary from '../Meals/MealsSummary';
 
 const Header = (props) => {
   return (
@@ -13,6 +14,7 @@ const Header = (props) => {
       <div className={classes['main-image']}>
         <img src={image} alt='Delecious Food' />
       </div>
+      <MealsSummary/>
     </React.Fragment>
   );
 };
